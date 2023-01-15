@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0ffff"
+    android:backgroundTint="#e0ffff"
+    tools:context=".RegisteredCourses">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="422dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="1dp"
+        android:autoText="false"
+        android:background="#e0ffff"
+        android:backgroundTint="#e0ffff"
+        android:text="Add Courses"
+        android:textAlignment="center"
+        android:textColor="#ff4500"
+        android:textColorLink="#320808"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edCourseName"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="36dp"
+        android:hint="Enter The Course's Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/edCourseGrade"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="44dp"
+        android:hint="Enter Your Grade for The Course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCourseHours" />
+
+    <EditText
+        android:id="@+id/edCourseHours"
+        android:layout_width="342dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="52dp"
+        android:hint="Enter The Credit Hours for The Course"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCourseName" />
+
+    <Button
+        android:id="@+id/btnAddCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="219dp"
+        android:backgroundTint="#ff4500"
+        android:text="Add Courses"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCourseGrade"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
